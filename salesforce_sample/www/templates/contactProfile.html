@@ -1,0 +1,22 @@
+<ion-view title="Profile">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content class="has-header">
+		<ion-item>
+	   		<ion-label>Name</ion-label>
+	   		<input type="text" value="{{contact.LastName}}" ng-model="contact.LastName">
+	 	</ion-item>
+	 	<ion-item>
+	   		<ion-label>Shire Id</ion-label>
+	   		<ion-label>{{shireId}}</ion-label>
+	 	</ion-item>
+	 	<ion-item>
+	   		<ion-label>Leave Message</ion-label>
+	   		<input type="text" id ="updatedText" ng-model="contact.message" ng-value="updatedText">
+	 	</ion-item>
+	 	<input type="submit" ng-click="updateRecord()" value="Update"/>
+		<!-- <p></p> : <ion-textarea> {{contact.LastName}}</ion-textarea>
+		<p>Shire Id </p> : <ion-textarea> {{contact.US_PM_Shire_Id__c}}</ion-textarea> -->
+	</ion-content>
+</ion-view> 
